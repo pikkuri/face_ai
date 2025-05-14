@@ -1,0 +1,74 @@
+# Python 仮想環境
+venv/
+.venv/
+env/
+ENV/
+
+# Python キャッシュファイル
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 配布/パッケージング
+dist/
+build/
+*.egg-info/
+
+# ユニットテスト/カバレッジレポート
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 環境設定
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# モデルファイル/重み
+*.pt
+*.pth
+*.onnx
+*.ort
+*.mlmodel
+
+# データファイル
+data/images/*
+data/labels/*
+!data/images/.gitkeep
+!data/images/train/.gitkeep
+!data/images/val/.gitkeep
+!data/labels/.gitkeep
+!data/labels/train/.gitkeep
+!data/labels/val/.gitkeep
+
+# 学習結果
+runs/
+
+# エディタの設定ファイル
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS生成ファイル
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
