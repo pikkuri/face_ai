@@ -13,3 +13,9 @@ matplotlib>=3.8.0
 
 # Optional dependencies
 albumentations>=1.3.1  # for advanced augmentations
+pyyaml
+faiss-cpu>=1.7.4             # GPU 版を避けるため cpu を明示
+rich
+typing-extensions
+# fallback
+scikit-learn                 # faiss がインストールできない環境用
