@@ -7,21 +7,22 @@
 
 ```
 face_ai/
-├── env.yml                # conda 環境ファイル (任意)
-├── requirements.txt       # pip 依存一覧
-├── face_yolomini.py       # ⭐ モデル定義 & 推論デコーダ
-├── train.py               # 学習スクリプト (シンプル版)
-├── data/                  # 画像 & アノテーション
-│   ├── images/
-│   │   ├── train/*.jpg
-│   │   └── val/*.jpg
-│   └── labels/            # YOLO txt (class cx cy w h)
-│       ├── train/*.txt
-│       └── val/*.txt
-├── runs/                  # 学習結果 (weights, log)
+├── env.yml                     # conda 環境ファイル (任意)
+├── requirements.txt            # pip 依存一覧
+├── face_yolomini.py            # ⭐ モデル定義 & 推論デコーダ
+├── train.py                    # 学習スクリプト (シンプル版)
+├── datasets/                   # 画像 & アノテーション
+│   └─── data/
+│       ├── images/
+│       │   ├── train/*.jpg
+│       │   └── val/*.jpg
+│       └── labels/             # YOLO txt (class cx cy w h)
+│           ├── train/*.txt
+│           └── val/*.txt
+├── runs/                       # 学習結果 (weights, log)
 └── utils/
-    ├── dataloader.py      # DataLoader (YOLO 形式)
-    └── augment.py         # 画像拡張 (Mosaic 等)
+    ├── dataloader.py           # DataLoader (YOLO 形式)
+    └── augment.py              # 画像拡張 (Mosaic 等)
 ```
 
 > **注意**: images と labels のフォルダ名は**必ず同一階層**にしてください。
